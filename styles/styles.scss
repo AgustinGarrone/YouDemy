@@ -1,0 +1,202 @@
+$posible:#e4e6e6;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app{
+    background-color:  white    ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+nav {
+    background-color:   /* #F0F7F4 */ black  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    .nav__logo {
+        width:180px;
+        height: 40px;
+        margin-left: 40px;
+    }
+    .nav__enlaces {
+        a {
+            color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-right: 20px;
+        }
+        
+    }
+}
+
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    border:0;
+}
+
+.videos {
+    width: 75vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: -11px 21px 29px 0px rgba(0,0,0,0.75);
+    background-color: /* #d4cbbc #99E1D9*/#F0F7F4 ;
+    &__menu {
+        background-color: /* #d2d9db */#F0F7F4;
+        border-bottom: .3px solid rgba(0, 0, 0, 0.548);
+        width: 100%;
+        height: 50px;
+        p {
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+    #player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 65vh;
+        background-color: black;
+        img {
+            width: 200px;
+            height: 100px;
+        }
+    }
+    .player__text {
+        color: white;
+        font-size: 2rem;
+    }
+}
+.videos__notas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &--div {
+        margin-top: 50px;
+    }
+    &--agregar {
+        width: 500px;
+        height: 60px;
+        border: 0;
+        background-color: rgb(255, 255, 255) ;
+        border-radius: 40px;
+        color: white;
+    }
+}
+.videos__notas--notacontainer{
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d9db;
+    margin-top: 40px;
+    p {
+        color: black;
+        text-align: center;
+    }
+}
+
+.playlist {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color:  #F0F7F4  ;
+    &__buscador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    &__buscador--search {
+        width: 300px;
+        height: 50px;
+        color: color;
+        box-shadow: -1px 0px 33px 0px rgba(24,65,100,1);
+        margin-right: 5px;
+    }
+    &__progress {
+       width: 400px;
+       bottom: 0px; 
+    } 
+}
+
+
+.playlist__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow: scroll;
+    width: 100%;
+    box-shadow: 23px 21px 29px -15px rgba(0,0,0,0.75);
+    summary {
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        cursor: pointer;
+        list-style: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    &--name{
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 40px;
+    }
+    &--time {
+        background-color: red;
+        color: white;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+    }
+    &--classnum {
+        margin-left: 30px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+.playlist__content--changename {
+    display: none;
+}
+details[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 320px;
+        height: 180px;
+    }
+}

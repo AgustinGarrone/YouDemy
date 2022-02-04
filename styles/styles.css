@@ -1,0 +1,295 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+}
+
+nav .nav__logo {
+  width: 180px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+nav .nav__enlaces a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 50px;
+  border: 0;
+}
+
+.videos {
+  width: 75vw;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: -11px 21px 29px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -11px 21px 29px 0px rgba(0, 0, 0, 0.75);
+  background-color: #F0F7F4;
+}
+
+.videos__menu {
+  background-color: #F0F7F4;
+  border-bottom: 0.3px solid rgba(0, 0, 0, 0.548);
+  width: 100%;
+  height: 50px;
+}
+
+.videos__menu p {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.videos #player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 65vh;
+  background-color: black;
+}
+
+.videos #player img {
+  width: 200px;
+  height: 100px;
+}
+
+.videos .player__text {
+  color: white;
+  font-size: 2rem;
+}
+
+.videos__notas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.videos__notas--div {
+  margin-top: 50px;
+}
+
+.videos__notas--agregar {
+  width: 500px;
+  height: 60px;
+  border: 0;
+  background-color: white;
+  border-radius: 40px;
+  color: white;
+}
+
+.videos__notas--notacontainer {
+  width: 60%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d2d9db;
+  margin-top: 40px;
+}
+
+.videos__notas--notacontainer p {
+  color: black;
+  text-align: center;
+}
+
+.playlist {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F0F7F4;
+}
+
+.playlist__buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.playlist__buscador--search {
+  width: 300px;
+  height: 50px;
+  color: color;
+  -webkit-box-shadow: -1px 0px 33px 0px #184164;
+          box-shadow: -1px 0px 33px 0px #184164;
+  margin-right: 5px;
+}
+
+.playlist__progress {
+  width: 400px;
+  bottom: 0px;
+}
+
+.playlist__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 60vh;
+  max-height: 60vh;
+  overflow: scroll;
+  width: 100%;
+  -webkit-box-shadow: 23px 21px 29px -15px rgba(0, 0, 0, 0.75);
+          box-shadow: 23px 21px 29px -15px rgba(0, 0, 0, 0.75);
+}
+
+.playlist__content summary {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.playlist__content--name {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.playlist__content--time {
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.playlist__content--classnum {
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.playlist__content--changename {
+  display: none;
+}
+
+details[open] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+details[open] img {
+  width: 320px;
+  height: 180px;
+}
+/*# sourceMappingURL=styles.css.map */

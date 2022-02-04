@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <nav>
+        <img class="nav__logo" src="img/whitelogo.png" alt="">
+        <div class="nav__enlaces">
+            <a href="#">Mi cuenta</a>
+            <a href="#">Compartir</a>
+        </div>
+    </nav>
+    <main class="app">
+        <section class="videos">
+           <div id="player">
+                <img src="img/videologoo.png" alt="">
+                <p class="player__text">Todavia no elegiste un video!</p>
+           </div>
+           <div class="videos__menu">
+               <p>Notas</p>
+           </div>
+           <div class="videos__notas">
+    
+           </div>
+        </section>
+        <section class="playlist">
+            <div class="playlist__buscador">
+                <input class="playlist__buscador--search" type="text" placeholder="pone tu video">
+                <button class="submitvideo">SUBMIT</button>
+            </div>
+            <div class="playlist__content">
+
+            </div>
+            <img class="playlist__progress" src="img/progressbar.png" alt="">
+        </section>
+    </main>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+ <script src="notas.js"></script>
+ <script src="playlist.js"></script>
+</body>
+</html>
